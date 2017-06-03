@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.wls.permissions">
+
+    <application
+       >
+        <activity
+            android:name=".tool.PermissionActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden"
+            />
+    </application>
+
+</manifest>
