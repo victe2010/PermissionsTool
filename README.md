@@ -12,7 +12,7 @@ android原生的系统拒绝授权之后，可以再次请求申请权限，但�
 
 引用指南
 -------------------------
-## 第 1 步 在存储库的末尾你根 build.gradle 中添加︰
+## 第 1 步 在存储库的 build.gradle 中添加︰
 
 <pre>
 	allprojects {
@@ -58,6 +58,14 @@ android原生的系统拒绝授权之后，可以再次请求申请权限，但�
             //权限申请失败  requestCode 请求码   deniedPermissions拒绝授权的权限名称
         }
     };
+</pre>
+
+-------------------------
+
+###用户拒绝授权后打开对话框前往设置界面
+
+<pre>
+	 PermissionTool.getInstance().showDialog(this,"是否前往权限管理设置姐main");
 </pre>
 
 
